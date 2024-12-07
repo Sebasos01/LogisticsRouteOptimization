@@ -1,0 +1,4 @@
+Vehicle,Freight Rate [COP/km],Time Rate [COP/min],Daily Maintenance [COP/day],Recharge/Fuel Cost [COP/(gal or kWh)],Recharge/Fuel Time [min/10 percent charge],Avg. Speed [km/h],Gas Efficiency [km/gal],Electricity Efficency [kWh/km]
+Gas Car,5000,500,30000,16000.0,0.1,60.0,10.0,
+Drone,500,500,3000,220.73,2.0,40.0,,0.15
+Solar EV,4000,500,21000,,,50.0,,0.15

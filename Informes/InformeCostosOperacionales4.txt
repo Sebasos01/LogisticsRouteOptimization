@@ -1,0 +1,8 @@
+Informe de Costos Operacionales
+================================
+
+Costo Carga Total: 137000.0
+Costo Distancia Total: 313509.67402068514
+Costo Tarifa Horaria Total: 1797.0578505171288
+Costo Recarga Total: 159760.0689278111
+Costo Mantenimiento: 81000.0

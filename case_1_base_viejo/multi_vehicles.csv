@@ -1,0 +1,25 @@
+VehicleType,Capacity,Range
+Gas Car,132,145
+Gas Car,135,195
+Gas Car,114,142
+Gas Car,157,173
+Gas Car,108,166
+Gas Car,108,136
+Gas Car,125,92
+Gas Car,78,133
+Gas Car,95,159
+Gas Car,98,107
+EV,124,954
+EV,97,715
+EV,85,1022
+EV,73,1075
+EV,84,941
+EV,84,1370
+EV,95,788
+drone,29,11
+drone,26,9
+drone,18,15
+drone,28,15
+drone,24,14
+drone,17,12
+drone,22,18

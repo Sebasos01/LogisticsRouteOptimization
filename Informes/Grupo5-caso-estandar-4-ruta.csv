@@ -1,0 +1,16 @@
+ID-Vehiculo,ID-Origen,ID-Destino
+v1,d4,c8
+v1,c8,d4
+v2,d12,c1
+v2,c1,d12
+v3,d11,c4
+v3,c4,c2
+v3,c2,d11
+v4,d3,c5
+v4,c5,c9
+v4,c9,d3
+v5,d6,c6
+v5,c6,c7
+v5,c7,d6
+v6,d1,c3
+v6,c3,d1
