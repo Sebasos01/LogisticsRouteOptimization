@@ -1,4 +1,58 @@
-# Organización de Archivos y Carpetas
+# Optimización de Rutas con Restricciones Complejas 🚛📊
+
+¡Bienvenido/a al repositorio de **Optimización de Rutas con Restricciones Complejas**! Este proyecto presenta un enfoque innovador y eficiente para resolver problemas de asignación y optimización de rutas utilizando vehículos terrestres, eléctricos y drones. La solución fue diseñada y desarrollada como parte del proyecto "Seneca Libre" y está fundamentada en análisis cuantitativo, visualizaciones y un enfoque práctico en la reducción de costos operativos.
+
+> **Autores:**  
+> - Carlos Casadiego - [cdcp2](https://github.com/cdcp2)
+> - Sebastián Ospino - [Sebasos01](https://github.com/Sebasos01)
+
+---
+
+## 🧩 **Descripción del Proyecto**
+
+Este proyecto aborda problemas de optimización de rutas en escenarios diversos, incorporando restricciones realistas como:
+
+- **Capacidades mixtas** de vehículos y centros de distribución.
+- **Minimización de costos** operativos (carga, distancia, recarga, mantenimiento, etc.).
+- **Gestión de oferta** bajo restricciones de capacidad.
+- **Manejo de múltiples productos** con demandas heterogéneas.
+
+Los resultados son ilustrados con rutas optimizadas y desgloses detallados de costos, respaldados por visualizaciones gráficas.
+
+**Escenarios Analizados:**
+
+1. **Escenario Base:** Optimización inicial con restricciones estándar.
+2. **Evaluación por Costos:** Reducción de costos totales con alta densidad de clientes.
+3. **Gestión de Oferta:** Inclusión de restricciones en la capacidad de centros de distribución.
+4. **Manejo de Múltiples Productos:** Complejidad añadida con demandas mixtas y productos heterogéneos.
+
+---
+
+## 📊 **Visualizaciones y Resultados**
+
+Cada escenario incluye:
+
+- **Descripción de parámetros:** Clientes, vehículos, demanda y restricciones específicas.
+- **Rutas generadas:** Optimización detallada para cada vehículo.
+- **Desglose de costos:** Impacto de cada componente en el costo total.
+- **Visualización gráfica:** Mapas de rutas generados para facilitar la comprensión.
+
+### Ejemplo de Visualización 📌
+**Ruta generada para el Caso 1:**
+![Ruta Caso 1](Docs/ruta_caso1.png)
+
+---
+
+## 🚀 **Características Clave**
+
+- **Adaptabilidad:** El modelo ajusta rutas según restricciones complejas y objetivos personalizados.
+- **Eficiencia:** Reducción de costos operativos manteniendo cumplimiento de restricciones.
+- **Escalabilidad:** Diseño flexible para incorporar nuevas restricciones o escenarios a futuro.
+- **Visualización:** Imágenes y tablas claras para interpretación rápida de resultados.
+
+---
+
+## 📂 **Estructura del Repositorio**
 
 - **Docs/**:
   - Contiene el modelo y el informe de resultados.
@@ -11,12 +65,17 @@
   
 - **Geneticos.ipynb**:
   - Contiene el código del bono de algoritmos genéticos para abordar el problema desde un enfoque evolutivo.
+---
 
-# Documentación del Código
+## 🏆 **Conclusiones**
 
-Este código implementa un modelo de ruteo de vehículos, incluyendo la preparación de datos, cálculo de distancias, formulación y resolución de un modelo de optimización, y la posterior generación de reportes y mapas de las rutas obtenidas.
+- La solución propuesta muestra **eficiencia y adaptabilidad** en la asignación de rutas bajo restricciones complejas.
+- El desglose detallado de costos permite identificar áreas clave de optimización.
+- La integración de múltiples restricciones, como la capacidad de los centros y productos mixtos, demuestra la **flexibilidad del modelo** para resolver problemas reales.
 
-## Estructura General
+---
+
+## 📖 Documentación general
 
 1. **Funciones de Utilidad para la Matriz de Costos:**
    - `haversine(coord1, coord2)`: Calcula la distancia en kilómetros entre dos puntos dados por coordenadas (latitud, longitud) utilizando la fórmula de Haversine.
@@ -42,7 +101,9 @@ Este código implementa un modelo de ruteo de vehículos, incluyendo la preparac
 6. **Visualización con Mapas:**
    - Código adicional para generar un mapa interactivo con Folium que muestre nodos y rutas resultantes.
 
-## Flujo de Trabajo del Código
+---
+
+## 🛠️ Flujo de Trabajo del Código
 
 1. Se cargan datos desde archivos CSV (ya sea seleccionando un caso base o ingresando rutas manualmente).
 2. Se calculan las distancias entre nodos.
