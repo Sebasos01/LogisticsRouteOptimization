@@ -1,114 +1,121 @@
-# Optimización de Rutas con Restricciones Complejas 🚛📊
+# Route Optimization with Complex Constraints 🚛📊
 
-¡Bienvenido/a al repositorio de **Optimización de Rutas con Restricciones Complejas**! Este proyecto presenta un enfoque innovador y eficiente para resolver problemas de asignación y optimización de rutas utilizando vehículos terrestres, eléctricos y drones. La solución fue diseñada y desarrollada como parte del proyecto "Seneca Libre" y está fundamentada en análisis cuantitativo, visualizaciones y un enfoque práctico en la reducción de costos operativos.
+Welcome to the **Route Optimization with Complex Constraints** repository! This project presents an innovative and efficient approach to solving route assignment and optimization problems using ground vehicles, electric vehicles, and drones. The solution was designed and developed as part of the "Seneca Libre" project and is based on quantitative analysis, visualizations, and a practical approach to reducing operational costs.
 
-> **Autores:**  
-> - Carlos Casadiego - [cdcp2](https://github.com/cdcp2)
-> - Sebastián Ospino - [Sebasos01](https://github.com/Sebasos01)
-
----
-
-## 🧩 **Descripción del Proyecto**
-
-Este proyecto aborda problemas de optimización de rutas en escenarios diversos, incorporando restricciones realistas como:
-
-- **Capacidades mixtas** de vehículos y centros de distribución.
-- **Minimización de costos** operativos (carga, distancia, recarga, mantenimiento, etc.).
-- **Gestión de oferta** bajo restricciones de capacidad.
-- **Manejo de múltiples productos** con demandas heterogéneas.
-
-Los resultados son ilustrados con rutas optimizadas y desgloses detallados de costos, respaldados por visualizaciones gráficas.
-
-**Escenarios Analizados:**
-
-1. **Escenario Base:** Optimización inicial con restricciones estándar.
-2. **Evaluación por Costos:** Reducción de costos totales con alta densidad de clientes.
-3. **Gestión de Oferta:** Inclusión de restricciones en la capacidad de centros de distribución.
-4. **Manejo de Múltiples Productos:** Complejidad añadida con demandas mixtas y productos heterogéneos.
+> **Authors:**  
+> - Carlos Casadiego - [cdcp2](https://github.com/cdcp2)  
+> - Sebastián Ospino - [Sebasos01](https://github.com/Sebasos01)  
 
 ---
 
-## 📊 **Visualizaciones y Resultados**
+## 🧩 **Project Description**
 
-Cada escenario incluye:
+This project addresses route optimization problems in diverse scenarios, incorporating realistic constraints such as:
 
-- **Descripción de parámetros:** Clientes, vehículos, demanda y restricciones específicas.
-- **Rutas generadas:** Optimización detallada para cada vehículo.
-- **Desglose de costos:** Impacto de cada componente en el costo total.
-- **Visualización gráfica:** Mapas de rutas generados para facilitar la comprensión.
+- **Mixed capacities** of vehicles and distribution centers.
+- **Minimization of operational costs** (loading, distance, recharging, maintenance, etc.).
+- **Supply management** under capacity constraints.
+- **Handling multiple products** with heterogeneous demands.
 
-### Ejemplo de Visualización 📌
-**Ruta generada para el Caso 1:**
-![Ruta Caso 1](Docs/ruta_caso1.png)
+The results are illustrated with optimized routes and detailed cost breakdowns, supported by graphical visualizations.
 
----
+**Analyzed Scenarios:**
 
-## 🚀 **Características Clave**
-
-- **Adaptabilidad:** El modelo ajusta rutas según restricciones complejas y objetivos personalizados.
-- **Eficiencia:** Reducción de costos operativos manteniendo cumplimiento de restricciones.
-- **Escalabilidad:** Diseño flexible para incorporar nuevas restricciones o escenarios a futuro.
-- **Visualización:** Imágenes y tablas claras para interpretación rápida de resultados.
+1. **Base Scenario:** Initial optimization with standard constraints.
+2. **Cost Evaluation:** Reduction of total costs with high customer density.
+3. **Supply Management:** Inclusion of capacity constraints in distribution centers.
+4. **Handling Multiple Products:** Added complexity with mixed demands and heterogeneous products.
 
 ---
 
-## 📂 **Estructura del Repositorio**
+## 📊 **Visualizations and Results**
+
+Each scenario includes:
+
+- **Parameter Description:** Customers, vehicles, demand, and specific constraints.
+- **Generated Routes:** Detailed optimization for each vehicle.
+- **Cost Breakdown:** Impact of each component on the total cost.
+- **Graphical Visualization:** Generated route maps to facilitate understanding.
+
+### Example of Visualization 📌
+**Route generated for Case 1:**
+![Route Case 1](Docs/ruta_caso1.png)
+
+---
+
+## 🚀 **Key Features**
+
+- **Adaptability:** The model adjusts routes based on complex constraints and personalized objectives.
+- **Efficiency:** Reduction of operational costs while maintaining compliance with constraints.
+- **Scalability:** Flexible design to incorporate new constraints or future scenarios.
+- **Visualization:** Clear images and tables for quick interpretation of results.
+
+---
+
+## 📂 **Repository Structure**
 
 - **Docs/**:
-  - Contiene el modelo y el informe de resultados.
+  - Contains the model and the results report.
   
-- **informes/**:
-  - Contiene todos los reportes y rutas generadas para los 4 casos de estudio.
+- **reports/**:
+  - Contains all reports and generated routes for the 4 case studies.
   
 - **solution.ipynb**:
-  - Notebook principal con todo el código del modelo, desde la carga de datos hasta la resolución del problema.
+  - Main notebook with all the model code, from data loading to problem solving.
   
 - **Geneticos.ipynb**:
-  - Contiene el código del bono de algoritmos genéticos para abordar el problema desde un enfoque evolutivo.
----
-
-## 🏆 **Conclusiones**
-
-- La solución propuesta muestra **eficiencia y adaptabilidad** en la asignación de rutas bajo restricciones complejas.
-- El desglose detallado de costos permite identificar áreas clave de optimización.
-- La integración de múltiples restricciones, como la capacidad de los centros y productos mixtos, demuestra la **flexibilidad del modelo** para resolver problemas reales.
+  - Contains the genetic algorithms bonus code to approach the problem from an evolutionary perspective.
 
 ---
 
-## 📖 Documentación general
+## 🏆 **Conclusions**
 
-1. **Funciones de Utilidad para la Matriz de Costos:**
-   - `haversine(coord1, coord2)`: Calcula la distancia en kilómetros entre dos puntos dados por coordenadas (latitud, longitud) utilizando la fórmula de Haversine.
-   - `compute_distance_matrix(data)`: Prepara las coordenadas, llama a la API de OSRM para obtener distancias terrestres y calcula las distancias para vehículos aéreos (drones) con la función Haversine.
-
-2. **Función para Resolver el Modelo de Ruteo de Vehículos:**
-   - `solve_vehicle_routing_problem(data)`: Construye y resuelve el modelo de optimización de ruteo de vehículos utilizando Pyomo. Incluye:
-     - Definición de conjuntos y parámetros (nodos, vehículos, tipos de vehículos, etc.).
-     - Variables de decisión (asignación de clientes a vehículos, arcos utilizados, asignación de depósitos, etc.).
-     - Restricciones del modelo (flujo, capacidad, asignación de depósitos, eliminación de subciclos, etc.).
-     - Función objetivo para minimizar costos (carga/descarga, distancia, tiempo, recarga y mantenimiento).
-     - Llamada al solver (Gurobi u otro) y devolución de la solución en forma de diccionario.
-
-3. **Función para Visualizar Rutas:**
-   - `print_vehicle_routes(solution, data)`: Imprime en consola las rutas de cada vehículo según la solución obtenida.
-
-4. **Funciones de Utilidad para Cargar Datos:**
-   - Varias funciones (`read_clients`, `read_vehicles`, `read_depots`, etc.) que cargan y validan datos desde archivos CSV para clientes, vehículos, depósitos, capacidades, costos de carga/descarga y tipos de vehículos.
-   
-5. **Generación de Reportes:**
-   - `generate_reports(solution, data)`: A partir de la solución, genera archivos CSV y TXT con las rutas, el valor de la función objetivo y un informe de costos operativos.
-
-6. **Visualización con Mapas:**
-   - Código adicional para generar un mapa interactivo con Folium que muestre nodos y rutas resultantes.
+- The proposed solution demonstrates **efficiency and adaptability** in route assignment under complex constraints.
+- The detailed cost breakdown allows for identifying key optimization areas.
+- The integration of multiple constraints, such as distribution center capacity and mixed products, showcases the **model's flexibility** to solve real-world problems.
 
 ---
 
-## 🛠️ Flujo de Trabajo del Código
+## 📖 **General Documentation**
 
-1. Se cargan datos desde archivos CSV (ya sea seleccionando un caso base o ingresando rutas manualmente).
-2. Se calculan las distancias entre nodos.
-3. Se construye y resuelve el modelo de optimización de ruteo de vehículos.
-4. Se genera un archivo JSON con la solución.
-5. Se imprimen las rutas y se generan reportes adicionales (CSV con rutas, TXT con el valor objetivo, TXT con informe de costos).
-6. Se visualiza la solución sobre un mapa interactivo usando Folium.
+1. **Utility Functions for the Cost Matrix:**
+   - `haversine(coord1, coord2)`: Calculates the distance in kilometers between two points given by coordinates (latitude, longitude) using the Haversine formula.
+   - `compute_distance_matrix(data)`: Prepares the coordinates, calls the OSRM API to obtain ground distances, and calculates aerial distances (drones) using the Haversine function.
+
+2. **Function to Solve the Vehicle Routing Model:**
+   - `solve_vehicle_routing_problem(data)`: Builds and solves the vehicle routing optimization model using Pyomo. Includes:
+     - Definition of sets and parameters (nodes, vehicles, vehicle types, etc.).
+     - Decision variables (assignment of customers to vehicles, used arcs, assignment of depots, etc.).
+     - Model constraints (flow, capacity, depot assignment, subcycle elimination, etc.).
+     - Objective function to minimize costs (loading/unloading, distance, time, recharging, and maintenance).
+     - Solver call (Gurobi or other) and returns the solution in dictionary form.
+
+3. **Function to Visualize Routes:**
+   - `print_vehicle_routes(solution, data)`: Prints the routes of each vehicle to the console based on the obtained solution.
+
+4. **Utility Functions to Load Data:**
+   - Various functions (`read_clients`, `read_vehicles`, `read_depots`, etc.) that load and validate data from CSV files for clients, vehicles, depots, capacities, loading/unloading costs, and vehicle types.
+
+5. **Report Generation:**
+   - `generate_reports(solution, data)`: From the solution, generates CSV and TXT files with the routes, the objective function value, and an operational cost report.
+
+6. **Visualization with Maps:**
+   - Additional code to generate an interactive map with Folium showing nodes and resulting routes.
+
+---
+
+## 🛠️ **Code Workflow**
+
+1. Data is loaded from CSV files (either selecting a base case or entering routes manually).
+2. Distances between nodes are calculated.
+3. The vehicle routing optimization model is built and solved.
+4. A JSON file with the solution is generated.
+5. Routes are printed, and additional reports are generated (CSV with routes, TXT with the objective value, TXT with the cost report).
+6. The solution is visualized on an interactive map using Folium.
+
+---
+
+Feel free to explore the repository, run the notebooks, and examine the detailed reports and visualizations. If you find this project useful or interesting, don't hesitate to include it in your portfolio or share it with other professionals! ⭐
+
+---
 
